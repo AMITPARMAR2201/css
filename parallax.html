@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax</title>
+    <style>
+        * https://codepen.io/DuskoStamenic/pen/ZEvBKdw */
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap";
+
+:root {
+--color: rgb(63 63 63);
+}
+
+body {
+margin: 0;
+font-family: Poppins, sans-serif;
+}
+
+.parallax-container {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+/*  this is where the magic happens:  */
+background-attachment: fixed;
+
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcwAFRH9ndjZk9v2zHMFfCDJq6e4qKKiSNWA&usqp=CAU);
+background-position: center;
+background-size: cover;
+color: var(--color);
+
+row-gap: 4rem;
+
+text-align: center;
+}
+
+.buffer {
+width: 100%;
+min-height: 60vh;
+background-color: var(--color);
+}
+
+.parallax-container2 {
+flex-direction: row;
+flex-wrap: wrap;
+
+padding: 6rem 0;
+background-image: url(https://media.istockphoto.com/id/1156597702/vector/indian-flag-brush-stroke.jpg?s=612x612&w=0&k=20&c=Q2DiOvR4iIYL4jFxrlTf59rOpkayy5YS-n863KNTZkA=);
+gap: 1.6em;
+}
+
+h1 {
+font-size: 3rem;
+font-weight: 700;
+}
+
+p {
+max-width: 52ch;
+padding: 1em;
+line-height: 1.5;
+}
+
+a {
+display: inline-block;
+padding: 1em 3.5em;
+border-radius: 0.3em;
+background-color: var(--color);
+color: white;
+font-size: 0.875rem;
+font-weight: 700;
+letter-spacing: 0.5px;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+h3 {
+margin-top: 1em;
+font-size: 1.6rem;
+font-weight: 700;
+}
+
+.card {
+display: flex;
+max-width: 320px;
+flex-direction: column;
+align-items: center;
+
+padding-bottom: 1rem;
+border-radius: 0.5em;
+
+background-color: white;
+box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
+}
+
+.card-img {
+width: 100%;
+height: 200px;
+border-radius: 0.3em;
+background-position: center;
+background-size: cover;
+}
+
+.card:nth-of-type(1) .card-img {
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY68eb3rvnSTYmsmE6QjbBW9SiXlLjtFdqSw&usqp=CAU);
+}
+
+.card:nth-of-type(2) .card-img {
+background-image: url(https://static.abplive.com/wp-content/uploads/sites/2/2020/09/28121620/fds.jpg?impolicy=abp_cdn&imwidth=720);
+}
+
+.card:nth-of-type(3) .card-img {
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD3Q_-0zpsZfnaWkCS_C1jkIhDcknFbzqCfA&usqp=CAU);
+}
+
+.card:nth-of-type(4) .card-img {
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Hstzbd2fEmy-QZs7es9SshEYoQd1zlXMIw&usqp=CAU);
+}
+  </style>
+</head>
+<body>
+
+<section class="parallax-container">
+    <h1>Revolutionaries of India</h1>
+    <p>
+        A revolutionary is a person who either participates in, or advocates a revolution. The term revolutionary can also be used as an adjective, to refer to something that has a major, sudden impact on society or on some aspect of human endeavor.
+    </p>
+  </section>
+
+  <section class="buffer"></section>
+
+  <section class="parallax-container parallax-container2">
+    <div class="card">
+      <div class="card-img"></div>
+      <h3>Chandra Shekhar Azad</h3>
+      <p>
+        Chandra Shekhar Tiwari, popularly known as Chandra Shekhar Azad, was an Indian revolutionary who reorganised the Hindustan Republican Association under its new name of Hindustan Socialist Republican
+      </p>
+      <a href="#">Learn more</a>
+    </div>
+    <div class="card">
+      <div class="card-img"></div>
+      <h3>Bhagat Singh</h3>
+      <p>
+        Bhagat Singh was a charismatic Indian revolutionary who participated in the mistaken murder of a junior British police officer in what was to be retaliation for the death of an Indian nationalist.
+      </p>
+      <a href="#">Learn more</a>
+    </div>
+    <div class="card">
+      <div class="card-img"></div>
+      <h3>Shivaram Rajguru </h3>
+      <p>
+        Shivaram Hari Rajguru was an Indian revolutionary from Maharashtra, known mainly for his involvement in the assassination of a British police officer named John Saunders
+      </p>
+      <a href="#">Learn more</a>
+    </div>
+    <div class="card">
+      <div class="card-img"></div>
+      <h3>Lala Lajpat Rai</h3>
+      <p>
+        Lala Lajpat Rai was an Indian freedom fighter, politician, and author, generally known as Lala Lajpat Rai. He was popularly known as Punjab Kesari, and also as 'Punjab da Sher' which literally means the 'Lion of Punjab'. He was one of the three members of the Lal Bal Pal trio.
+      </p>
+      <a href="#">Learn more</a>
+    </div>
+  </section>
+
+  <!-- <section class="buffer"></section> -->
+
+
+    
+</body>
+</html>
